@@ -22,7 +22,6 @@ with open('test.txt', 'r') as f:
         quit()
     for i in lines:
         if re.fullmatch(r'[0-3]*2[1,3]{2}', i):
-            print(i)
             numbers.append(int(i))
             answer.append(i.replace('2', ''))
     if not numbers:
