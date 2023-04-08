@@ -21,7 +21,7 @@ with open('test.txt', 'r') as f:
         print('Файл пуст')
         quit()
     for i in lines:
-        if re.fullmatch(r'[0-2]*2[1,3]{2}', i):
+        if re.fullmatch(r'[0-3]*2[1,3]{2}', i):
             numbers.append(int(i))
             answer.append(i.replace('2', ''))
     if not numbers:
